@@ -1,6 +1,6 @@
-import sys
+import os, sys
 
-with open("C:/Users/abies/Documents/Advent of Code/day1input.txt") as file:
+with open(os.path.join(sys.path[0], "day1input.txt")) as file:
     numbers = [int(n) for n in file]
 
 numbers.sort()

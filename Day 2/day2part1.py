@@ -1,4 +1,6 @@
-with open("C:/Users/abies/Documents/Advent of Code/Day 2/day2input.txt") as file:
+import os, sys
+
+with open(os.path.join(sys.path[0], "day2input.txt")) as file:
     passwords = file.read().splitlines()
 
 valid = 0
